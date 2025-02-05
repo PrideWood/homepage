@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FEE3E8;
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  /* 禁止水平滚动 */
+  width: 100%;
+  /* 确保body宽度不超出屏幕 */
+  height: 100vh;
+  /* 让 body 占满整个视口高度 */
+  display: flex;
+  /* 启用 Flexbox 布局 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  touch-action: none;
+  /* 禁止触摸滑动 */
+  user-select: none;
+  /* 禁止文本选择 */
+}
+
+.box {
+  width: 80%;
+  /* 默认宽度为 80% */
+  max-width: 450px;
+  /* 最大宽度为450px */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.box p {
+  text-align: justify;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.box li a {
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a svg {
+  fill: #8a8a8a;
+  width: 32px;
+  height: 32px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a:hover svg {
+  fill: #F38B8A;
+  transform: scale(1.2);
+}
+
+/* 媒体查询：对于小屏幕，设置盒子的宽度为 90% 或更多 */
+@media (max-width: 767px) {
+  .box {
+    width: 90% !important;
+    /* 在移动端宽度为 90% */
+  }
+}
+
+/* 媒体查询：对于更小屏幕的手机，可以适当增加宽度 */
+@media (max-width: 480px) {
+  .box {
+    width: 95% !important;
+    /* 在更小的屏幕上占用更大的宽度 */
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #485061;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transition: bottom 0.3s ease;
+}
+
+footer a {
+  color: #485061;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer img {
+  width: 14px;
+  vertical-align: middle;
+}
